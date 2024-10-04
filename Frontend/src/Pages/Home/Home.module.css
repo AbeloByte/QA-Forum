@@ -7,9 +7,21 @@
 }
 .topComponents {
   display: flex;
+  gap: 10px;
 }
 
-.secondpart {
+.topComponents button {
+  background-color: white;
+  border: none;
+  color: brown;
+}
+.main_container {
+  width: 70%;
+  margin: 5px auto;
+  border: 0px solid rgb(163, 161, 161);
+  background-color: rgb(227, 230, 230);
+}
+.QuestionAndUser {
   width: 50%;
   margin: auto;
   display: flex;
@@ -17,6 +29,35 @@
   justify-content: space-between;
 }
 
+.QuestionAndUser button {
+  background-color: blue;
+  color: white;
+  padding: 8px;
+  border-radius: 5px;
+  margin-left: 0px;
+}
+
+.QuestionAndUser span {
+  color: orangered;
+}
+
+.input {
+  margin: 10px auto;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 65%;
+}
+
+.input input {
+  width: 90%;
+  display: flex;
+  justify-content: flex-start; /* Aligns the content to the left */
+  align-items: center; /* Vertically centers the input if needed */
+  border: 1px solid black;
+  background-color: #fff;
+  padding: 5px;
+}
 .usercontainer {
   width: 65%;
   display: flex;
@@ -25,11 +66,17 @@
   margin: 35px auto;
 }
 
+.recentuser {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
 footer {
-  width: 80%;
+  width: 100%;
   height: 200px;
-  margin: 20px auto;
-  background-color: black;
+  margin: 20px auto 0px;
+  background-color: rgb(73, 72, 72);
   color: white;
   display: flex;
   align-items: center;
@@ -45,7 +92,7 @@ footer {
   align-items: center;
   justify-content: space-around;
   margin-top: 15px;
-  gap: 25px;
+  gap: 5px;
 }
 .evangadisection img {
   width: 150px;
@@ -62,5 +109,6 @@ footer {
 }
 
 hr {
-  width: 80%;
+  width: 65%;
+  color: rgb(242, 242, 245);
 }

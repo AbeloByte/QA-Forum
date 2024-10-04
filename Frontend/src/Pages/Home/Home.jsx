@@ -9,7 +9,7 @@ import { CiYoutube } from "react-icons/ci";
 
 function Home() {
   return (
-    <div>
+    <section>
       <div className={classes.toppart}>
         <img style={{ width: "150px" }} src={Logo} />
         <div className={classes.topComponents}>
@@ -18,49 +18,70 @@ function Home() {
           <button>LOGOUT</button>
         </div>
       </div>
-      <div className={classes.secondpart}>
-        <button>Ask Question</button>
-        <p>
-          Wellcome: <span>Mihretu</span>
-        </p>
-      </div>
-      <hr />
-      {/* user */}
-      <div className={classes.usercontainer}>
-        <FaRegCircleUser size={50} />
-        <FaGreaterThan size={40} />
-      </div>
-      <div className={classes.usercontainer}>
-        <FaRegCircleUser size={50} />
-        <FaGreaterThan size={40} />
-      </div>
-      <footer>
-        <div className={classes.evangadisection}>
-          <img src="https://www.evangadi.com/themes/humans/assets/hammerlook/img/misc/evangadi-logo-white.png" />
-          <div className={classes.media}>
-            {/* facebook */}
-            <CiFacebook />
+      <div className={classes.main_container}>
+        <div className={classes.QuestionAndUser}>
+          <button>Ask Question</button>
+          <p>
+            Wellcome: <span>Mihretu</span>
+          </p>
+        </div>
+        <div className={classes.input}>
+          <input type="text" placeholder="Search Question" />
+        </div>
+        <hr />
+        {/* user */}
+        <div className={classes.usercontainer}>
+          <div>
+            <div className={classes.recentuser}>
+              <FaRegCircleUser size={40} />
+              <span>javascript</span>
+            </div>
 
-            {/* instagram */}
-            <FaInstagram />
-            {/* youtube */}
-            <CiYoutube />
+            <p>Liza</p>
           </div>
+
+          <FaGreaterThan size={20} />
         </div>
-        <div className={classes.usefulLinks}>
-          <h3>Useful Link</h3>
-          <a>How it works</a>
-          <a>Terms of Service</a>
-          <a>Privacy Policy</a>
+        <hr />
+        <div className={classes.usercontainer}>
+          <div>
+            <div className={classes.recentuser}>
+              <FaRegCircleUser size={40} />
+              <span>what is Array</span>
+            </div>
+            <p>Abel</p>
+          </div>
+
+          <FaGreaterThan size={20} />
         </div>
-        <div className={classes.contactInfo}>
-          <h3>Contact Info</h3>
-          <a>Evangadi Networks</a>
-          <a>support@evangadi.com</a>
-          <a>+1-202-384-2702</a>
-        </div>
-      </footer>
-    </div>
+        <footer>
+          <div className={classes.evangadisection}>
+            <img src="https://www.evangadi.com/themes/humans/assets/hammerlook/img/misc/evangadi-logo-white.png" />
+            <div className={classes.media}>
+              {/* facebook */}
+              <CiFacebook />
+
+              {/* instagram */}
+              <FaInstagram />
+              {/* youtube */}
+              <CiYoutube />
+            </div>
+          </div>
+          <div className={classes.usefulLinks}>
+            <h3>Useful Link</h3>
+            <a>How it works</a>
+            <a>Terms of Service</a>
+            <a>Privacy Policy</a>
+          </div>
+          <div className={classes.contactInfo}>
+            <h3>Contact Info</h3>
+            <a>Evangadi Networks</a>
+            <a>support@evangadi.com</a>
+            <a>+1-202-384-2702</a>
+          </div>
+        </footer>
+      </div>
+    </section>
   );
 }
 
