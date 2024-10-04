@@ -1,14 +1,12 @@
-import { useState } from 'react'
-
-import './App.css'
+import React from "react";
+import Home from "./Pages/Home/Home.jsx";
 
 function App() {
-
   return (
     <>
-      <h1>Evangadi  Forum Project</h1>
+      <Home />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

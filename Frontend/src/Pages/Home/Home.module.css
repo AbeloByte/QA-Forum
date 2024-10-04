@@ -1,0 +1,66 @@
+.toppart {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.topComponents {
+  display: flex;
+}
+
+.secondpart {
+  width: 50%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.usercontainer {
+  width: 65%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 35px auto;
+}
+
+footer {
+  width: 80%;
+  height: 200px;
+  margin: 20px auto;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.evangadisection {
+  margin-left: 35px;
+  display: flex;
+  flex-direction: column;
+}
+.media {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 15px;
+  gap: 25px;
+}
+.evangadisection img {
+  width: 150px;
+}
+.usefulLinks {
+  display: flex;
+  flex-direction: column;
+}
+
+.contactInfo {
+  margin-right: 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+hr {
+  width: 80%;
+}
