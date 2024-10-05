@@ -1,4 +1,4 @@
-const mysql2 = require("mysql2");
+const mysql2 = require("mysql2/promise");
 
 const dbconnection = mysql2.createPool({
   user: process.env.USER,
@@ -15,4 +15,4 @@ const dbconnection = mysql2.createPool({
 //     console.log(result);
 //   }
 // });
-module.exports = dbconnection.promise();
+module.exports = dbconnection;
