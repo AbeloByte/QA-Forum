@@ -74,6 +74,24 @@ const postAnswer = async (req, res) => {
             });
         }
 
+        // Query to check if the user has already posted the same answer for the question
+        const checkDuplicateAnswerSql = `
+            SELECT * FROM answers 
+            WHERE userid = ? AND questionid = ? AND answer = ?`;
+
+        const [existingAnswer] = await dbconnection.query(
+            checkDuplicateAnswerSql,
+            [userid, questionid, answer]
+        );
+
+        // If a duplicate answer exists, return a 409 Conflict response
+        if (existingAnswer.length > 0) {
+            return res.status(409).json({
+                error: "Conflict",
+                message: "You have already posted this answer for the question.",
+            });
+        }
+
         // Insert answer into the answers table using the user ID from the request
         const insertAnswerSql = `
             INSERT INTO answers (userid, questionid, answer) 
